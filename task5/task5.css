@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	font-family:"微软雅黑";
+	background-color: #ccc;
+	overflow: auto;
+}
+header {
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+	margin: 0;
+	overflow: hidden;
+}
+header .logo img {
+	height: 50px;
+	float: left;
+	margin: 5px 20px;
+}
+header .tags {
+	float: right;
+	margin: 10px 10px;
+}
+.tags li {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin: auto 20px;
+}
+.tags li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}
+.tags li a:hover, a.active {
+	color: #999;
+}
+div .left{
+    float: left;
+    /*display: inline-block;*/
+    margin-right: 430px;
+    min-width: 350px;
+    /*width: 800px; */
+}
+div .right {
+	/*float: right;
+	display: inline-block;*/
+	/*float: right;
+	margin-top: 0px; */
+	position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+article, aside {
+	background-color: #fff;
+	padding: 30px;
+	margin: 20px;
+	box-shadow: 3px 3px 3px #999;
+}
+.subtitle {
+	color: #666;
+}
+.author {
+	color: #999;
+	font-size: 12px;
+}
+article a:hover {
+    color: red;
+}
+.paragraph p {
+	text-indent: 2em;
+}
+.paragraph img {
+	width: 250px;
+}
+article ul {
+	list-style-type: none;
+	line-height: 1.5em;
+}
+.pic {
+	display: inline-block;
+	border: 1px solid #996;
+	padding: 15px;
+	width: 150px;
+	margin: 20px;
+}
+.pic p {
+	text-align: center;
+	margin: 10px auto;
+}
+.pic img {
+	width: 150px;
+	height: 150px;
+}
+article ol {
+    line-height: 1.5em;
+}
+table,th,td {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+table {
+	width: 100%;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+th,td {
+	text-align: left;
+}
+thead {
+	color: white;
+	background-color: #333;
+}
+tfoot {
+	background-color: #ddd;
+	font-weight: bold;
+}
+aside {
+	width: 350px;
+}
+form {
+	font-size: 12px;
+}
+div .form {
+	line-height: 1.5em;
+}
+form label {
+	display: inline-block;
+	width: 40%;
+	text-align: right;
+	vertical-align: top;
+}
+label .empty {
+	line-height: 1em;
+}
+form .tips{
+	display: inline-block;
+	line-height: 1em;
+	color: #ddd;
+	position: relative;
+	bottom: 5px;
+	left: 2px;
+}
+form textarea {
+	height: 100px;
+	width: 50%;
+}
+
+input[type=submit] {
+	background-color: #03F;
+	color: white;
+	padding: 10px;
+	width: 100%;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+footer {
+	clear: both;
+	background-color: black;
+	height: 50px;
+	text-align: center;
+}
+footer p {
+	color: white;
+	font-size: 12px;
+	padding-top: 20px;
+}
