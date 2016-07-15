@@ -1,0 +1,329 @@
+/*reset*/
+*{
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	min-width: 1280px;
+	font:12px/1.5em "MicrosoftYaHei", "微软雅黑", serif;
+	background-color: #fff;
+	color: #999;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+textarea{
+	resize:none;
+}
+
+nav{
+	padding: 10px 60px;
+	width: 91%;
+	height: 40px;
+}
+nav .home{
+	display: inline-block;
+	height: 100%;
+	font-size: 21px;
+	color: #000;
+	font-weight: bold;
+	font-family: "STIXiHei", "华文细黑", serif;
+	padding: 5px 0;
+}
+nav .home span{
+	position: relative;
+	left: 2px;
+	bottom: 8px;
+}
+nav	ul{
+	font-size: 14px;
+	float: right;
+}
+nav	ul:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav	ul li{
+	float: left;
+	font-weight: bold;
+	text-align: center;
+}
+nav ul li a{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+nav ul li a:hover:not(.login){
+	border-bottom:5px #E74F4D solid;
+	color: #E74F4D;
+}
+nav .login img{
+	vertical-align: middle;
+}
+nav .login span{
+	color: #E74F4D;
+}
+
+.banner{
+	display: table;
+	width: 100%;
+	height: 690px;
+	/*background-color: #999;*/
+	background-image: url("img/banner.png");
+	background-size: cover;
+}
+.banner .intro{
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 120px;
+	color: #fff;
+	font-size: 21px;
+}
+.banner .intro h1{font: 60px/1.5em "MicrosoftYaHei", "微软雅黑", serif;}
+.banner .intro p{line-height: 1.5em;}
+.banner .intro button{
+	margin-top: 60px;
+	width: 330px;
+	height: 62px;
+	background-color: #E74F4D;
+	outline: none;
+	border: 1px rgba(255,255,255,0) solid;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+	transition: color ease-out 0.5s;
+}
+.banner .intro button:hover{
+	border: 1px #E74F4D solid;
+	color: #E74F4D;
+	background-color: transparent;
+}
+
+.section1 ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.section1 ul li{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items: center;
+	height: 250px;
+	width: 25%;
+	text-align: center;
+}
+.section1 ul li span{
+	font-size: 14px;
+	width: 50%;
+	padding: 0 75px;
+	margin-top: -120px;
+	border-right: 2px #ccc solid;
+}
+.section2{
+	background-color: #EDEDEC;
+	height: 360px;
+	width: 100%;
+	display: table;
+	text-align: center;
+}
+.section2 .content{
+	display: table-cell;
+	vertical-align: middle;
+}
+.section2 .content h1{
+	font: 54px "STIXiHei","华文细黑",serif; 
+	font-weight: bold;
+	line-height: 1.5em;
+}
+.section3{
+	height: 340px;
+	width: 100%;
+	background-image: url("img/map.png");
+	-webkit-background-size:cover;
+	background-size: cover;
+}
+.section3 .mask{
+	display: inline-block;
+	width: 100%;
+	height: 240px;
+	background-color: rgba(172,52,51,0.2);
+	text-align: center;
+	color: #fff;
+	padding: 50px 0;
+}
+.section3 .mask	h1{
+	font-size: 21px;
+	line-height: 1.5em;
+}
+.section3 .mask span{
+    color: #fff;
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    margin-top: 5px;
+    border-top: 2px solid #fff;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.section3 .mask	span:hover{width: 300px;}
+.section3 .mask p{
+	font-size: 12px;
+	line-height: 1.5em;
+}
+.section3 .mask .input-group{
+	margin-top: 40px;
+	position: relative;
+}
+.section3 .mask .input-group input{
+	height: 35px;
+	width: 235px;
+	border: none;
+	margin-right: 30px;
+	outline: none;
+}
+.section3 .mask .input-group input[type=button]{
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	background-color: #E74F4D;
+	cursor: pointer;
+}
+.section3 .mask .input-group input[type=text]{
+	text-indent: 5px;
+	font-size: 14px;
+	color: #999;
+	background: url("img/input.png") no-repeat center center transparent;
+}
+/*.section3 .mask .input-group ul{
+	position: relative;
+	right: 25%;
+	margin-right: 32px;
+	margin-top: -3px;
+	height: 140px;
+	overflow-y: hidden;
+	border-bottom: 1px #E74F4D solid;
+}*/
+.section4{
+	height: 600px;
+	width: 100%;
+	background-color: #f7f7f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section4 .part{
+	text-align: center;
+	margin-right: 35px;
+}
+.section4 .part .img{
+	height: 270px;
+	width: 180px;
+	padding: 10px;
+	border: 1px #dadada solid;
+	overflow: hidden;
+}
+.section4 .part	.img img{
+	height: 270px;
+	cursor: pointer;
+}
+.section4 .part	.msg{
+	width: 180px;
+	height: 50px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.section4 .part	.msg h1{font-size: 20px; line-height: 1.5em;}
+.section5{
+	height: 1080px;
+	width: 100%;
+}
+.section5 .row1{
+	height: 560px;
+	width: 100%;
+}
+.section5 .row1 .left{
+	width: 67%;
+	height: 100%;
+	float: left;
+	background: url("img/sec6_1.png");
+	background-size: cover;
+}
+.section5 .row1 .left .msg{
+	color: #fff;
+	text-align: center;
+	padding-top: 120px;
+}
+.section5 .row1 .left .msg h3{
+	font-size: 50px;
+	line-height: 1em;
+}
+.section5 .row1 .left .msg h1{
+	font-size: 150px;
+	line-height: 1em;
+	margin-bottom: 50px; 
+}
+.section5 .row1 .left .msg p{
+	font-size: 20px;
+	line-height: 1em;
+}
+.section5 .row2{
+	height: 520px;
+	width: 100%;
+}
+.section5 .row2 .left{
+	width: 67%;
+	height: 100%;
+	float: left;
+}
+.section5 .row2 .left .left1{
+	float: left;
+	height: 100%;
+	width: 50%;
+	background-color: #E74F4D;
+	color: #fff;
+	text-align: center;
+}
+.section5 .row2 .left .left2{
+	float: right;
+	height: 100%;
+	width: 49%;
+	background-color: #fff;
+	text-align: center;
+}
+.section5 .row2 .right{
+	width: 33%;
+	height: 100%;
+	float: right;
+	background: url("img/sec6_2.png");
+	background-size: cover;
+}
+.section5 .row2 .right .mask{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(4, 0, 0, 0.4);
+}
+.section5 .row2 .left .msg span{
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    margin-top: 5px;
+    border-top: 2px solid #ccc;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.section5 .row2 .left .msg span:hover{width: 300px;}
+}
