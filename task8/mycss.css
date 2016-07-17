@@ -1,0 +1,93 @@
+/*box-sizing css is important, otherwise, you need to tweak the presentage */
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .grid-container{
+        width: 90%; 
+        max-width: 1200px;      
+        margin: 0 auto;
+        padding: 10px;
+        outline: 1px solid #F6A1A1; 
+        margin: 10px;
+    }
+  
+    /*-- our cleafix hack -- */ 
+    .row:before, 
+    .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+
+    }
+
+ 
+
+
+    [class*='col-'] {
+        float: left; 
+        min-height: 1px; 
+        height: 70px;
+        
+      
+        /*-- our gutter -- */
+        padding: 10px; 
+
+    }
+    /*
+    .outline, .outline *{
+        outline: 1px solid #F6A1A1; 
+    }
+    */
+
+    /*-- some extra column content styling --*/
+    [class*='col-'] > div {
+        background-color: #eee;
+        height: 50px;
+        border: 1px solid #999;
+    }
+
+
+
+@media screen and (min-width: 769px) {
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-2 {
+        width: 16.67%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-2 {
+        width: 16.67%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+    .col-sm-8 {
+        width: 66.67%;
+    }
+}
