@@ -10,7 +10,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 }
 
 body {
-  font: 12px/1.5 Microsoft YaHei,arial,sans-serif,'宋体';
+  font: 12px/1.5em "MicrosoftYaHei",arial,sans-serif;
 }
 
 a {
@@ -86,12 +86,7 @@ html,
   -webkit-border-radius: 4px;
 }
 
-/*
-    color
-*/
-/*
-    other
-*/
+
 .l-fl {
   float: left;
 }
@@ -176,7 +171,7 @@ html,
 */
 [class^='icon'] {
   display: inline-block;
-  background: url("sprite.png") no-repeat;
+  background: url("icons.png") no-repeat;
 }
 
 .icon-date {
@@ -671,7 +666,7 @@ html,
   z-index: 2;
 }
 .m-numCount .item.green .text {
-  border-left-color: #43b29e;
+  border-left-color: #43B29E;
 }
 .m-numCount .item.green .block {
   background: #43b29e;
