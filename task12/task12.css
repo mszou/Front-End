@@ -1,0 +1,111 @@
+/* reset */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* task12-1 */
+
+#task12-1{
+	margin-left: 30px;
+	margin-top: 30px;
+}
+thead{
+	background: black;
+	color:white;
+}
+tbody tr:nth-child(2n+2){
+	background: lightgray;
+}
+tbody tr:nth-child(-n+3){
+	color: red;
+}
+
+/* task12-2 */
+#task12-2{
+	transition: width ease 1s;
+	margin-left: 60px;
+	width: 100px;
+}
+#task12-2:focus{
+	width: 150px;
+}
+
+/* task12-3 */
+
+#task12-3{
+	position: relative;
+	margin-top: 15px;
+	margin-left: 10px;
+	height: 150px;
+	width: 300px;
+	overflow: hidden;
+}
+
+ul{
+	display: block;
+	position: relative;
+	transition: 1s left;
+	left: 0;
+}
+
+li{
+	display: block;
+	height: 150px;
+	width: 300px;
+	position: absolute;
+	top: 0;
+	list-style: none;
+}
+
+li:first-child{
+	left: 0px;
+	background: green;
+}
+/*
+li:nth-child(2) {
+	left: -300px;
+	background: yellow;
+}
+*/
+li:nth-child(2){
+	left: -300px;
+	background: blue;
+}
+
+a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: white;
+	position: absolute;
+	bottom: 0px;
+	opacity: 0.8;
+	margin: 1px;
+	text-align: center;
+	line-height: 20px;
+	text-decoration: none;
+	color: black;
+}
+
+#a:target ~ ul{
+	left: 0px;
+}
+
+#b:target ~ ul{
+	left: 150px;
+}
+
+#c:target ~ ul{
+	left: 300px;
+}
+
+a:nth-of-type(1){
+	right: 44px;
+}
+a:nth-of-type(2){
+	right: 22px;
+}
+a:nth-of-type(3){
+	right: 0px;
+}
